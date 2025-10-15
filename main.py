@@ -22,10 +22,10 @@ async def main():
     print("  Gurugram District Courts")
     print("="*70)
     print("\n  How it works:")
-    print("  1. Script opens browser to the cause list page")
-    print("  2. YOU manually fill the form and solve captcha")
-    print("  3. YOU click Search and press ENTER in terminal")
-    print("  4. Script saves the results page as PDF")
+    print("  1. Script opens browser and AUTO-FILLS the form")
+    print("  2. YOU only need to solve the CAPTCHA")
+    print("  3. Press ENTER in terminal after solving captcha")
+    print("  4. Script submits and saves as PDF automatically")
     print("="*70)
     
     scraper = CourtCauseListScraper()
@@ -54,7 +54,7 @@ async def main():
         date = get_date_input()
         
         print("\n  Starting scrape...")
-        await scraper.scrape_and_save_as_pdf(
+        await scraper.scrape_cause_list(
             court_complex=DEFAULT_COURT_COMPLEX,
             court_number=court_number,
             date=date,
@@ -109,14 +109,14 @@ async def main():
     
     print("\n" + "="*70)
     print("  ALL DONE!")
-    print(f"  PDFs saved in: {OUTPUT_DIR}/")
-    print(f"  Logs saved in: {LOG_DIR}/")
+    print(f"  📁 PDFs saved in: {OUTPUT_DIR}/")
+    print(f"  📝 Logs saved in: {LOG_DIR}/")
     print("="*70 + "\n")
 
 if __name__ == "__main__":
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
-        print("\n\n  Interrupted by user")
+        print("\n\n  ⚠️ Interrupted by user")
     except Exception as e:
-        print(f"\n  Error: {str(e)}")
+        print(f"\n  ❌ Error: {str(e)}")
