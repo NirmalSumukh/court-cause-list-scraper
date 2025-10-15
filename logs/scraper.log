@@ -1,0 +1,36 @@
+2025-10-15 14:11:55,547 - INFO - 
+======================================================================
+2025-10-15 14:11:55,556 - INFO - ======================================================================
+
+2025-10-15 14:14:55,134 - INFO - 
+======================================================================
+2025-10-15 14:14:55,143 - INFO - ======================================================================
+
+2025-10-15 14:17:38,092 - INFO - ✅ Browser initialized.
+2025-10-15 14:17:38,093 - INFO - 
+======================================================================
+2025-10-15 14:17:38,093 - INFO - 🏛️  Court Complex: District Court, Gurugram
+2025-10-15 14:17:38,093 - INFO - ⚖️  Court Number: 1
+2025-10-15 14:17:38,094 - INFO - 📅 Date: 15/10/2025
+2025-10-15 14:17:38,094 - INFO - 📋 Case Type: Civil
+2025-10-15 14:17:38,094 - INFO - ======================================================================
+
+2025-10-15 14:17:38,094 - INFO - 🌐 Loading cause list page...
+2025-10-15 14:17:41,538 - INFO - 🖼️  Locating and switching to the content iframe...
+2025-10-15 14:17:41,539 - INFO - ⏳ Waiting for form elements to be ready inside the iframe...
+2025-10-15 14:18:11,549 - ERROR - ❌ Error during scraping: Timeout 30000ms exceeded.
+2025-10-15 14:18:11,677 - INFO - 📸 Screenshot saved: outputs/error_screenshot_20251015_141811.png
+2025-10-15 14:18:11,834 - INFO - ✅ Browser closed.
+2025-10-15 14:24:44,056 - INFO - Loading cause list page...
+2025-10-15 14:24:48,337 - INFO - Waiting for form submission and PDF download...
+2025-10-15 14:27:23,089 - WARNING - No automatic download detected: Target page, context or browser has been closed
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+2025-10-15 14:27:28,098 - ERROR - Error: Target page, context or browser has been closed
+2025-10-15 14:27:33,221 - INFO - Browser closed.
+2025-10-15 14:31:54,791 - INFO - Opening cause list page...
+2025-10-15 14:32:26,255 - INFO - Screenshot saved: outputs/screenshot_20251015_143225.png
+2025-10-15 14:32:26,255 - INFO - Saving page as PDF: outputs/CauseList_Court1_Civil_15-10-2025.pdf
+2025-10-15 14:32:26,573 - INFO - PDF saved successfully: outputs/CauseList_Court1_Civil_15-10-2025.pdf
+2025-10-15 14:32:31,748 - INFO - Browser closed.
